@@ -93,7 +93,7 @@ GAME.appendChild(rock);
      */
      if(checkCollision(rock) === true){
   endGame();
-} else if(rock.style.top > 360){
+} else if(top < 380){
   rock.style.top = `${top += 2}px`;
   window.requestAnimationFrame(moveRock());
 } else{
