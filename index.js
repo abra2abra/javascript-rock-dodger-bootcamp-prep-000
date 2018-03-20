@@ -95,7 +95,7 @@ GAME.appendChild(rock);
   endGame();
 } else if(top < 380){
   rock.style.top = `${top += 2}px`;
-  window.requestAnimationFrame(rock);
+  window.requestAnimationFrame(moveRock);
 } else{
   rock.remove();
 }
