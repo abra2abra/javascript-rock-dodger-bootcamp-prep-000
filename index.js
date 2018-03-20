@@ -120,7 +120,7 @@ GAME.appendChild(rock);
  */
 function endGame() {
   clearInterval(gameInterval);
-  for(var i = 0; i< ROCKS.length - 1; i++){
+  for(var i = 0; i< ROCKS.length; i++){
     ROCKS[i].remove();
   }
   window.removeEventListener('keydown', moveDodger);
